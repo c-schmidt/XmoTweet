@@ -1,0 +1,24 @@
+XmoTweet is a small Xmobar Plugin for Twitter. It shows you the 
+tweets form only one person you have added. 
+
+Hints:
+* Xmobar
+* Working Cabal installation is needed 
+* You need xml and http-wget (add them to xmobar.cabal)  
+* Not fully functional yet...
+
+Getting Started:
+
+* Edit the URL in the XmoTweet.hs to http://api.twitter.com/1/users/show.xml?screen_name=<user>.
+* Copy XmoTweet.hs to /xmobar/src/Plugins/.
+* Import Plugins.XmoTweet in /xmobar/Config.hs and add XmoTweet to runnableTypes.
+* Add Run XmoTweet 1000 to commands in ~/.xmobarrc and add %xmotweet% to template.
+* Install or reinstall Xmobar
+
+Example:
+
+~/xmobar$ cabal configure
+~/xmobar$ cabal build 
+~/xmobar$ cabal install
+
+Have fun ...
